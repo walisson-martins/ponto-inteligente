@@ -5,7 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginModule, LoginRoutingModule } from './autenticacao';
+import {
+  CadastroPjModule,
+  CadastroPjRoutingModule,
+  LoginModule,
+  LoginRoutingModule,
+} from './autenticacao';
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent],
@@ -15,8 +20,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     LoginModule,
     LoginRoutingModule,
-    AppRoutingModule,
     HttpClientModule,
+    CadastroPjModule,
+    CadastroPjRoutingModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
